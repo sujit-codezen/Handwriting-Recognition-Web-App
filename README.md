@@ -31,7 +31,7 @@ Built with **Flask** (Python web framework) and **Transformers** (by Hugging Fac
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/yourusername/handwriting-recognizer.git](https://github.com/sujit-codezen/Handwriting-Recognition-Web-App.git)
+git clone https://github.com/sujit-codezen/Handwriting-Recognition-Web-App.git
 cd handwriting-recognizer
 ```
 
