@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handwriting Recognizer</title>
+    <style>
+        body { font-family: Arial; padding: 2rem; }
+        .preview { margin-top: 20px; }
+        .output { background: #f0f0f0; padding: 1rem; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Handwriting Recognition</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Recognize</button>
+    </form>
+
+    {% if image_path %}
+    <div class="preview">
+        <h3>Uploaded Image:</h3>
+        <img src="{{ image_path }}" alt="Handwriting" width="400">
+    </div>
+    {% endif %}
+
+    {% if text %}
+    <div class="output">
+        <h3>Recognized Text:</h3>
+        <p>{{ text }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
